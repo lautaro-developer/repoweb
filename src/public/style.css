@@ -1,0 +1,50 @@
+:root {
+  --padding-campo-input: 10px;
+  --btn-contraseña: 10px;
+
+  --input-incorrecto: rgb(255, 0, 0);
+  --input-correcto: rgb(42, 253, 5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form button {
+  padding: var(--btn-contraseña);
+  cursor: pointer;
+}
+
+#nombre,
+#usuario,
+#pass,
+#pass2,
+#age,
+#mail {
+  padding: var(--padding-campo-input);
+  outline: none;
+}
+
+button{
+  width: 100%;
+}
+
+/*---------------------------| classList js |---------------------------*/
+.input-correcto {
+  border: 2px solid var(--input-correcto);
+}
+.input-incorrecto {
+  border: 2px solid var(--input-incorrecto);
+}
+/*---------------------------*/

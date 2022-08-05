@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ddedded</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <div class="formulario_contenedor">
+        <form id="form" class="form" action="/enviar_correo" method="post">
+          <div class="form_contenedor">
+            <label class="nombre_label">Nombre:</label>
+            <div>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="nombre"
+                placeholder="Escriba su nombre"
+                maxlength="15"
+                max="15"
+                minlength="1"
+                min="1"
+              />
+            </div>
+            <br />
+            <div class="labelUsuario">
+              <label class="apellido_label"> Nombre de usuario: </label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="usuario"
+                id="usuario"
+                class="usuario"
+                placeholder="Escriba su usuario"
+                maxlength="10"
+                max="10"
+                minlength="6"
+                min="1"
+              />
+            </div>
+            <br />
+            <div class="div_label_pass">
+              <label class="pass_label"> password: </label>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                class="pass"
+                placeholder="Escriba su pass"
+              />
+            </div>
+            <br />
+            <div class="div_label_pass2">
+              <label class="pass_label"> confirmar password: </label>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="pass2"
+                id="pass2"
+                class="pass2"
+                placeholder="confirme su pass"
+              />
+            </div>
+
+            <br />
+            <div class="btn_contra">
+              <button id="btn-pass" type="button">Ver contraseña</button>
+            </div>
+            <br />
+            <div class="div_label_edad">
+              <label class="age_label"> edad: </label>
+            </div>
+            <div>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                class="age"
+                placeholder="Escriba su edad"
+              />
+            </div>
+            <br />
+            <div class="div_label_mail">
+              <label class="label_main">Email</label>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="mail"
+                placeholder="Ponga su correo"
+              />
+            </div>
+            <br />
+            <div class="div_enviar_form">
+              <button id="enviar-form">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/validar.js"></script>
+    <script src="js/login.js" type="module"></script>
+  </body>
+</html>
